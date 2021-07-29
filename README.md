@@ -22,7 +22,7 @@ npm start
 
 ## How to use
 after the installation, run a server with ngrok or some similar software
-<img src="https://github.com/WasixXD/CLIChat/tree/main/github/clientfile.png" />
+<img src="https://github.com/WasixXD/CLIChat/blob/main/github/clientfile.png"/>
 and change the port in the client.js file
 
 
