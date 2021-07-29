@@ -19,7 +19,7 @@ socket.on("connect", async () => {
             
             if(roomIsSecure(room)) {
                 let userPassword = await getPassword(room)
-                console.log(userPassword)
+                
                 let match = await passwordCheck(room, userPassword)
                 if(match) {
                     
