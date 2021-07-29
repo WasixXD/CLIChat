@@ -37,7 +37,7 @@ then make a .zip without the node_modules and send for the people you want
 ## Features
 * Server-side
 	* Server listen for requests
-	* Can connect multiple connects
+	* Can connect multiple clients
 	* Receive and send messages for exclusives rooms
 	
 * Client-side
