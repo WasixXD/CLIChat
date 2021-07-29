@@ -48,7 +48,7 @@ then make a .zip without the node_modules and send for the people you want
 		* See who goes in and out
 		* see how many users are online, how many messages have been sent, etc.
 
-## Technologies
+## Dependencies
 - [Chalk](https://www.npmjs.com/package/chalk) for the color customization
 - [Inquirer](https://www.npmjs.com/package/inquirer)	for initials prompts
 - [Socket.io](https://socket.io/) for the real time communication			
@@ -56,4 +56,4 @@ then make a .zip without the node_modules and send for the people you want
 - [bcrypt](https://www.npmjs.com/package/bcrypt) for the password hash
 
 ## Quick demo
-<img scr="https://github.com/WasixXD/CLIChat/blob/main/github/ezgif.com-gif-maker.gif"/>
+[Demo](https://github.com/WasixXD/CLIChat/blob/main/github/ezgif.com-gif-maker.gif)
