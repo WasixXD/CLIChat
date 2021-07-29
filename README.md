@@ -1,5 +1,5 @@
 # CLIChat
-<img src="https://github.com/WasixXD/CppProjects/blob/main/CLIChat/github/chat.png?raw=true"
+<img src="https://github.com/WasixXD/CppProjects/blob/main/CLIChat/github/chat.png?raw=true"/>
 
 ## A CLI real time chat
 A app that can connect multiple clients in a server and enter in a room to talk to each other
