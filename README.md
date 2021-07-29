@@ -1,7 +1,7 @@
 # CLIChat
 <img src="https://github.com/WasixXD/CLIChat/blob/main/github/chat.png"/>
 
-## A CLI real time chat
+## A  CLi chat in real time
 A app that can connect multiple clients in a server and enter in a room to talk to each other
 
 
