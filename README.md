@@ -12,6 +12,10 @@ in this project, NodeJS version 16.3 was used
 ```
 git clone https://github.com/WasixXD/CLIChat
 ``` 
+### Install the dependencies
+```
+npm install
+``` 
 
 ### For running the server
 ```
@@ -50,3 +54,6 @@ then make a .zip without the node_modules and send for the people you want
 - [Socket.io](https://socket.io/) for the real time communication			
 - [uuid](https://www.npmjs.com/package/uuid) for the rooms ids
 - [bcrypt](https://www.npmjs.com/package/bcrypt) for the password hash
+
+## Quick demo
+<img scr="https://github.com/WasixXD/CLIChat/blob/main/github/ezgif.com-gif-maker.gif"/>
