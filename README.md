@@ -43,7 +43,7 @@ then make a .zip without the node_modules and send for the people you want
 * Client-side
 	* Can connect to the server
 	* User can customize his color and name
-	* can see all the room and connect to them
+	* can see all the rooms and connect to them
 	* can see the chat
 		* See who goes in and out
 		* see how many users are online, how many messages have been sent, etc.
