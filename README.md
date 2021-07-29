@@ -1,4 +1,5 @@
 # CLIChat
+<img src="https://github.com/WasixXD/CppProjects/blob/main/CLIChat/github/chat.png?raw=true"
 
 ## A CLI real time chat
 A app that can connect multiple clients in a server and enter in a room to talk to each other
@@ -7,12 +8,12 @@ A app that can connect multiple clients in a server and enter in a room to talk 
 ## Installation
 in this project, NodeJS version 16.3 was used
 
-###Clone the repository
+### Clone the repository
 ```
 git clone https://github.com/WasixXD/CLIChat
 ``` 
 
-###For running the server
+### For running the server
 ```
 npm run server 
 or
