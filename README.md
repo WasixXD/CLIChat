@@ -9,7 +9,7 @@ A app that can connect multiple clients in a server and talk to each other
 in this project, NodeJS version 16.3 was used
 
 ### Clone the repository
-```
+```shell
 git clone https://github.com/WasixXD/CLIChat
 ``` 
 ### Install the dependencies
