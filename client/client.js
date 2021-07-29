@@ -1,4 +1,4 @@
-// you want to change this the http://localhost:3000 to the port of your server
+// you want to change the http://localhost:3000 to the port of your server
 const socket = require('socket.io-client')("http://localhost:3000")
 const { parseUser, displayRooms, userMenu, getRoomInfo, roomIsSecure, getPassword, passwordCheck, collectARoom } = require("./utils")
 const { Chat } = require('./chat')
