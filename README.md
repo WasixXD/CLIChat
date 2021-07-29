@@ -56,4 +56,4 @@ then make a .zip without the node_modules and send for the people you want
 - [bcrypt](https://www.npmjs.com/package/bcrypt) for the password hash
 
 ## Quick demo
-[Demo](https://github.com/WasixXD/CLIChat/blob/main/github/ezgif.com-gif-maker.gif)
+![Demo](https://github.com/WasixXD/CLIChat/blob/main/github/ezgif.com-gif-maker.gif)
