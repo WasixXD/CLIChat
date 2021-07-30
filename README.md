@@ -19,8 +19,6 @@ npm install
 
 ### For running the server
 ```
-npm run server 
-or
 npm start
 ```
 
