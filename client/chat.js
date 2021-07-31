@@ -15,7 +15,6 @@ function filter(message) {
 }
 
 
-
 class Chat {
     constructor(title, user, socket) {
         this.socket = socket
