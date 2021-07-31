@@ -88,7 +88,7 @@ function getAllRooms() {
 }
 
 
-function displayRooms() {
+function displayRooms(rooms) {
     return new Promise((resolve, reject) => {
         let questions = [
             {
@@ -99,7 +99,7 @@ function displayRooms() {
                 choices: []
             }
         ]
-        let rooms = getAllRooms()
+        
         for(let room of rooms) {
             questions[0].choices.push({name: `${room.id} ${room.secure? "🔒" : ""}`, value: room.id})
         }
@@ -148,8 +148,8 @@ function createRoom(data) {
 }
 
 
-function roomIsSecure(id) {
-    let result = getAllRooms()
+function roomIsSecure(id, result) {
+    
     
     let [{ secure }] = result.filter((room) => { 
         if(room.id == id) {
@@ -187,9 +187,9 @@ function getPassword(id) {
 
 
 
-async function passwordCheck(id, password) {
+async function passwordCheck(id, password, result) {
     //pegar a senha da sala
-    let result = getAllRooms()
+    
     let [roomPassword] = result.filter((room) => {
         if(room.id == id) {
             return room.password
@@ -236,8 +236,8 @@ function addUser(id) {
 }
 
 
-function collectARoom(id) {
-    let result = getAllRooms()
+function collectARoom(id, result) {
+    
 
     let [theRoom] = result.filter((room) => {
         if(room.id == id) {
