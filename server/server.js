@@ -1,5 +1,5 @@
 const { v4 } = require('uuid')
-const { createRoom, addMessage, addUser, removeUser } = require('../client/utils')
+const { createRoom, addMessage, addUser, removeUser, getAllRooms } = require('../client/utils')
 const bcrypt = require('bcrypt')
 
 
@@ -34,17 +34,24 @@ io.on("connection", (socket) => {
             createRoom(roomJson)
             
             io.to(socket.id).emit("create-room-confirm", roomJson.id)
+            io.to(socket.id).emit("set-rooms", data)
+
         })
     })
     
     
-
+    socket.on("get-rooms", () => {
+        let data = getAllRooms()
+    
+        io.to(socket.id).emit("set-rooms", data)
+    })
     socket.on("connect-room", (data) => {
         try {
             
             socket.join(data.room)
             addUser(data.room)
-            io.in(data.room).emit("update", data)
+            let rooms = getAllRooms()
+            io.in(data.room).emit("update", data, rooms)
             io.in(data.room).emit("success-connect", data)
         } catch(error) {
             console.log(error)
@@ -54,14 +61,15 @@ io.on("connection", (socket) => {
 
     socket.on("message", (messageData) => {
         addMessage(messageData.room)
-        
-        io.in(messageData.room).emit("update", messageData)
+        let rooms = getAllRooms()
+        io.in(messageData.room).emit("update", messageData,rooms)
         io.in(messageData.room).emit("message-send", messageData)
     })
     socket.on("chat-disconnection", (user) => {
         removeUser(user.room)
+        let data = getAllRooms()
         io.in(user.room).emit("chat-disconnect", user)
-        io.in(user.room).emit("update", user)
+        io.in(user.room).emit("update", user, data)
         
     })  
 
